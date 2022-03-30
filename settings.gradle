@@ -1,0 +1,3 @@
+rootProject.name = 'spring-boot-study'
+include 'spring-boot-web'
+include 'spring-boot-domain'

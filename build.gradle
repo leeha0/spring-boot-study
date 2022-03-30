@@ -1,0 +1,28 @@
+plugins {
+	id 'org.springframework.boot' version '2.6.5' apply(false)
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE' apply(false)
+	id 'java'
+}
+
+repositories {
+	mavenCentral()
+}
+
+// 루프 프로젝트에 인크루드 된 모든 프로젝트를 관리
+subprojects {
+	group = 'com.leeha.boot.study'
+	version = '1.0.0'
+	sourceCompatibility = '11'
+
+	repositories {
+		mavenCentral()
+	}
+
+	dependencies {
+
+	}
+}
+
+test {
+	useJUnitPlatform()
+}

@@ -1,0 +1,19 @@
+plugins {
+    id 'org.springframework.boot'
+    id 'io.spring.dependency-management'
+    id 'java'
+}
+
+dependencies {
+    // SubProjects
+    // : 는 디렉터리를 의미
+    // 공통 모듈에 의존하도록 추가
+    implementation project(':spring-boot-domain')
+
+    // Spring
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    // Test
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
